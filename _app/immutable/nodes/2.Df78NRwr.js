@@ -1,0 +1,1 @@
+import{a as o,t as p}from"../chunks/disclose-version.DgjLNEMj.js";import"../chunks/legacy.PXMw4WMR.js";var e=p('<div><p>Main</p> <a href="/next"><button>Next</button></a></div>');function i(t){var a=e();o(t,a)}export{i as component};
