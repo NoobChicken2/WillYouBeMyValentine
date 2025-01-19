@@ -1,8 +1,8 @@
 <script>
-    import { page } from '$app/stores';
+    import { page } from '$app/state';
 
     let createlink = (endpoint) => {
-        return $page.url.href + endpoint
+        return page.url.href + endpoint
     }
 
     let mousePos = $state({ 'x' : '' , 'y' : '' });
@@ -64,9 +64,9 @@
 
 <svelte:window on:mousemove="{updateMousePos}"/>
 
-<div class="absolute mx-auto">
+<!-- <div class="absolute mx-auto">
     <span class="font-bold">{mouseSpeed} px/s</span>
-</div>
+</div> -->
 
 <main class="h-[100vh] flex justify-center items-center bg-blue-300">
     <div class="w-3/4 h-4/5 flex flex-col gap-16 justify-center items-center pb-48">
@@ -74,12 +74,12 @@
             Placeholder question?
         </p>
         <div class='flex justify-center items-center gap-10'>
-            {@render button('Yes', 'next')}
+            {@render button('Yes', 'message')}
             <a href={createlink('next')}>
                 <button class="shadow-sm rounded-lg transition ease-in-out duration-300 bg-[#41d3af] hover:bg-teal-500 font-bold text-[#04074e] py-4 px-8"
                         bind:this={noButton}
-                        on:mouseover="{showDocument}"
-                        >
+                        onmouseover={showDocument}
+                        onfocus={showDocument}>
                     No
                 </button>
             </a>
