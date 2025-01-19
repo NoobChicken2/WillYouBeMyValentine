@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import { fade } from 'svelte/transition'
 
 	let messages = ['Test1', 'Test2Test2', 'Test3Test3Test3'];
@@ -46,4 +46,4 @@
 			{messages[i]}
 		</p>
 	{/key}
-</div>
+</div> -->

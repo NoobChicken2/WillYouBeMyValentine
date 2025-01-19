@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import { page } from '$app/state';
 
     let createlink = (endpoint) => {
@@ -68,14 +68,14 @@
     <span class="font-bold">{mouseSpeed} px/s</span>
 </div> -->
 
-<main class="h-[100vh] flex justify-center items-center bg-blue-300">
+<!-- <main class="h-[100vh] flex justify-center items-center bg-blue-300">
     <div class="w-3/4 h-4/5 flex flex-col gap-16 justify-center items-center pb-48">
         <p>
             Placeholder question?
         </p>
         <div class='flex justify-center items-center gap-10'>
             {@render button('Yes', 'message')}
-            <a href={createlink('next')}>
+            <a href='/'>
                 <button class="shadow-sm rounded-lg transition ease-in-out duration-300 bg-[#41d3af] hover:bg-teal-500 font-bold text-[#04074e] py-4 px-8"
                         bind:this={noButton}
                         onmouseover={showDocument}
@@ -85,4 +85,4 @@
             </a>
         </div>
     </div>
-</main>
+</main> -->
